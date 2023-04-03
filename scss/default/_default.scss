@@ -1,0 +1,121 @@
+@import "../custom/custom.scss";
+// font-family: 'Josefin Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+// Colors
+    // Primary
+    $colorMain1: #282828;
+    $colorMain2: #d2461c;
+    $colorMain3: #afafaf;
+    $colorMain4: #FFCDBE;
+
+    // Neutral
+    $neutral-100: #f8f9fa;
+    $neutral-200: #e9ecef;
+    $neutral-300: #dee2e6;
+    $neutral-400: #ced4da;
+    $neutral-500: #adb5bd;
+    $neutral-600: #6c757d;
+    $neutral-700: #495057;
+    $neutral-800: #343a40;
+    $neutral-900: #212529;
+    $White: #fff;
+    $Black: #000;
+
+    // Status
+    $colorActive: #cdecde;
+    $colorExpire: #e8e9eb;
+    $colorAlert: #ff4040;
+    
+
+@mixin Typography($weight, $size, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+
+    @include media-breakpoint-only(lg) {
+        @include Typography(400, 18%, 140%)
+    }
+    @include media-breakpoint-only(md) {
+        @include Typography(400, 16%, 130%)
+    }
+    @include media-breakpoint-only(xs) {
+        @include Typography(400, 16%, 130%)
+    }
+
+}
+
+    h1 {
+        @include media-breakpoint-only(lg) {
+            @include Typography(700, 66%, 110%)
+        }
+        @include media-breakpoint-only(md) {
+            @include Typography(700, 48%, 110%)
+        }
+        @include media-breakpoint-only(xs) {
+            @include Typography(700, 24%, 120%)
+        }
+    }
+    h2 {
+        @include media-breakpoint-only(lg) {
+            @include Typography(700, 59%, 120%)
+        }
+        @include media-breakpoint-only(md) {
+            @include Typography(700, 32%, 120%)
+        }
+        @include media-breakpoint-only(xs) {
+            @include Typography(700, 20%, 120%)
+        }
+    }
+    h3 {
+        @include media-breakpoint-only(lg) {
+            @include Typography(700, 40%, 120%)
+        }
+        @include media-breakpoint-only(md) {
+            @include Typography(700, 24%, 120%)
+        }
+        @include media-breakpoint-only(xs) {
+            @include Typography(700, 18%, 120%)
+        }
+    }
+    h4 {
+        @include media-breakpoint-only(lg) {
+            @include Typography(700, 32%, 120%)
+        }
+        @include media-breakpoint-only(md) {
+            @include Typography(700, 18%, 120%)
+        }
+        @include media-breakpoint-only(xs) {
+            @include Typography(700, 16%, 120%)
+        }
+    }
+    h5 {
+        @include media-breakpoint-only(lg) {
+            @include Typography(700, 28%, 120%)
+        }
+        @include media-breakpoint-only(md) {
+            @include Typography(700, 16%, 120%)
+        }
+        @include media-breakpoint-only(xs) {
+            @include Typography(700, 14%, 120%)
+        }
+    }
+    h6 {
+        @include media-breakpoint-only(lg) {
+            @include Typography(700, 22%, 120%)
+        }
+    }
+::placeholder {
+    @include Typography(400, 16, 24)
+}
