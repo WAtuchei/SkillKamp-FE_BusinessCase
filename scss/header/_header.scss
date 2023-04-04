@@ -1,0 +1,64 @@
+@use "../default/default";
+
+.coupon-container {
+    display: flex;
+    height: 50px;
+    margin-bottom: 3.5rem;
+}
+.coupon-bar {
+    @include default.FlexSet(center, center, row);
+    width: 100%;
+    position: absolute;
+    background-color: default.$colorMain1;
+
+    p {
+        @include default.Typography(200, 18px, 110%);
+        letter-spacing: .2em;
+    }
+}
+    // animation
+    .coupon-bar:nth-child(1) {
+        animation: fading 7s infinite alternate;
+        animation-delay: 5s;
+    }
+    .coupon-bar:nth-child(2) {
+        opacity: 0;
+        animation: fading 7s infinite alternate-reverse;
+        animation-delay: 5s;
+    }
+        @keyframes fading {
+            from { opacity: 1; }
+            25% { opacity: 1; }
+            50% { opacity: .5; }
+            75% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+.logo {
+    @include default.FlexSet(center, center, row);
+    margin-bottom: 1.5rem;
+
+    a {
+        text-decoration: none;
+
+        h1 {
+            @include default.Typography(normal, 59px, 110%);
+
+            color: default.$colorMain1;
+            letter-spacing: .2em;
+        }
+    }
+    
+}
+
+// Navbar
+.account-container, .cart-container {
+    @include default.FlexSet(center, center, row);
+
+    button {
+        all: unset;
+    }
+    img {
+        width: 22px;
+    }
+}

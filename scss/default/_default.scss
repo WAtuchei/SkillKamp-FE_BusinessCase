@@ -1,6 +1,6 @@
 @import "../custom/custom.scss";
 // font-family: 'Josefin Sans', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap');
 
 // Colors
     // Primary
@@ -33,6 +33,12 @@
     font-size: $size;
     line-height: $height;
 }
+@mixin FlexSet($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
 
 * {
     margin: 0;
@@ -42,7 +48,7 @@
 
 body {
     min-height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif !important;
 
     @include media-breakpoint-only(lg) {
         @include Typography(400, 18%, 140%)

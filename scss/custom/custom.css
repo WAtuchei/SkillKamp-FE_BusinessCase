@@ -11873,4 +11873,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.nav-link {
+  color: #282828 !important;
 }/*# sourceMappingURL=custom.css.map */
