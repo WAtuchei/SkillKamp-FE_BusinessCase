@@ -11874,6 +11874,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+::marker {
+  content: "";
+}
+
 .nav-link {
   color: #282828 !important;
 }/*# sourceMappingURL=custom.css.map */

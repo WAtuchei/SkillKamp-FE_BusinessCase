@@ -1,0 +1,51 @@
+@use "../default/default";
+
+@mixin Typography($weight, $size, $height) {
+    font-weight: $weight !important;
+    font-size: $size !important;
+    line-height: $height !important;
+}
+@mixin Wrapper($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+.wrapper {
+    @include Wrapper(center, center, row)
+}
+.wrapper-col {
+    @include Wrapper(center, center, column)
+}
+
+.primary-BTN {
+    @include Typography(300, 16px, 110%);
+    all: unset;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 11px 48px;
+    color: #fff;
+    background-color: default.$colorMain1;
+    text-align: center;
+}
+    .primary-BTN:hover {
+        background-color: default.$colorMain2;
+        transition: ease .3s;
+    }
+
+.secondary-BTN {
+    @include Typography(300, 15px, 110%);
+    all: unset;
+    box-sizing: border-box;
+    padding: 11px 32px;
+    color: default.$colorMain1;
+    background-color: #fff;
+    border: 1px solid default.$colorMain1;
+    text-align: center;
+}
+    .secondary-BTN:hover {
+        color: default.$colorMain3;
+        transition: ease .3s;
+    }

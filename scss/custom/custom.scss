@@ -1,5 +1,7 @@
 @import "../../module_Packages/bootstrap/scss/bootstrap.scss";
 
+::marker { content: ""; }
+
 .nav-link {
     color: #282828 !important;
 }

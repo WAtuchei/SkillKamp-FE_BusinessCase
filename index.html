@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="WAtuchei">
 
-    <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="scss/index/index.css">
     <!-- Custom Bootstrap 5 -->
     <link rel="stylesheet" href="scss/custom/custom.css">
 
@@ -16,16 +16,16 @@
     <header class="container-fluid g-0">
         <!-- Coupon bar -->
         <div class="coupon-container">
-            <div class="coupon-bar py-3 text-light">
+            <div class="coupon-bar wrapper py-3 text-light">
                 <p class="m-0">Get 10% Off - Use Coupon Code HAPPY123</p>
             </div>
-            <div class="coupon-bar py-3 text-light">
+            <div class="coupon-bar wrapper py-3 text-light">
                 <p class="m-0">Free Shipping Over $50</p>
             </div>
         </div>
 
         <!-- brand logo -->
-        <div class="logo">
+        <div class="logo wrapper">
             <a href="#">
                 <h1>happy kids</h1>
             </a>
@@ -39,22 +39,94 @@
                 <a class="nav-link ms-2 ms-md-3 ms-lg-5" href="#">Our Story</a>
                 <a class="nav-link ms-2 ms-md-3 ms-lg-5" href="#">Contact</a>
             
-                <div class="account-container ms-2 ms-md-3 ms-lg-5">
+            <!-- Account -->
+                <div class="account-container wrapper ms-2 ms-md-3 ms-lg-5">
                     <button>
                         <img src="Images/Icon/user-svgrepo-com.svg" alt="user-icon">
                         <span>Log In</span>
                     </button>
                 </div>
-                <div class="cart-container ms-3">
+            <!-- Cart -->
+                <div class="cart-container wrapper ms-3">
                     <button>
                         <img src="Images/Icon/cart-svgrepo-com.svg" alt="cart">
                         <span>0</span>
                     </button>
                 </div>
-            </nav>
-            
+            </nav> 
         </div>
     </header>
+    
+    <main>
+        <div class="banner-container">
+            <div id="bannerCarousel" class="carousel carousel-fade" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                    <li data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="Images/Banner3.png" class="w-100 d-block" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Banner1.png" class="w-100 d-block" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Banner2.png" class="w-100 d-block" alt="Third slide">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Product Carousel -->
+        <div class="product-container">
+            <div class="wrapper">
+                <h2>New Arrivals</h2>
+            </div>
+
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="product-card py-2">
+                            <div class="wrapper">
+                                <img src="Images/Product/Product1.png" class="d-block" alt="T-shirt">
+                            </div>
+                            <div class="wrapper-col">
+                                <p class="m-1">I'm product</p>
+                                <p>19.99₺</p>
+                            </div>
+                            <div class="wrapper px-4">
+                                <button class="secondary-BTN w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <div class="wrapper px-4 mt-5">
+                <button class="primary-BTN">Shop All</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-line"></div>
+    </footer>
     
     <!-- Bootstrap 5 -->
     <script src="module_Packages/bootstrap/dist/js/bootstrap.min.js"></script>

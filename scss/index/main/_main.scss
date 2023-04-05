@@ -1,0 +1,28 @@
+@use "../../default/default";
+
+main {
+    position: relative;
+}
+// banner
+.banner-container, .product-container {
+    margin-bottom: 4rem;
+}
+.carousel-item {
+    img {
+        max-height: 650px;
+        object-fit: cover;
+    }
+}
+// banner
+
+// product
+.product-container h2 {
+    margin-bottom: 2.5rem;
+}
+
+.product-card {
+    width: 230px;
+    img {
+        width: 200px;
+    }
+}
