@@ -5,3 +5,7 @@
 .nav-link {
     color: #282828 !important;
 }
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1);
+}

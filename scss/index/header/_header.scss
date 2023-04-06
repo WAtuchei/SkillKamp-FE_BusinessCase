@@ -2,58 +2,59 @@
 @use "../../default/default";
 
 header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .coupon-container {
     display: flex;
     height: 50px;
     margin-bottom: 3.5rem;
-}
-.coupon-bar {
-    width: 100%;
-    position: absolute;
-    background-color: default.$colorMain1;
 
-    p {
-        @include components.Typography(200, 18px, 110%);
-        letter-spacing: .2em;
-    }
-}
-    // animation
-    .coupon-bar:nth-child(1) {
-        animation: fading 7s infinite alternate;
-        animation-delay: 5s;
-    }
-    .coupon-bar:nth-child(2) {
-        opacity: 0;
-        animation: fading 7s infinite alternate-reverse;
-        animation-delay: 5s;
-    }
-        @keyframes fading {
-            from { opacity: 1; }
-            25% { opacity: 1; }
-            50% { opacity: .5; }
-            75% { opacity: 0; }
-            100% { opacity: 0; }
+    .coupon-bar {
+        width: 100%;
+        position: absolute;
+        background-color: default.$colorMain1;
+    
+        p {
+            @include components.Typography(200, 18px, 110%);
         }
+    }
+        // animation
+        .coupon-bar:nth-child(1) {
+            animation: fading 7s infinite alternate;
+            animation-delay: 5s;
+        }
+        .coupon-bar:nth-child(2) {
+            opacity: 0;
+            animation: fading 7s infinite alternate-reverse;
+            animation-delay: 5s;
+        }
+            @keyframes fading {
+                from { opacity: 1; }
+                25% { opacity: 1; }
+                50% { opacity: .5; }
+                75% { opacity: 0; }
+                100% { opacity: 0; }
+            }
+}
 
 .logo {
     margin-bottom: 2rem;
-
     a {
         text-decoration: none;
 
         h1 {
-            @include components.Typography(normal, 59px, 110%);
+            @include components.Typography(400, 59px, 110%);
 
             color: default.$colorMain1;
-            letter-spacing: .2em;
         }
     }
     
 }
 
 // Navbar
+.nav-container {
+    margin-left: 6rem;
+}
 .account-container, .cart-container {
     button {
         all: unset;

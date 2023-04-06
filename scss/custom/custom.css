@@ -11880,4 +11880,8 @@ textarea.form-control-lg {
 
 .nav-link {
   color: #282828 !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(1);
 }/*# sourceMappingURL=custom.css.map */

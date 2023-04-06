@@ -31,6 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     min-height: 100vh;
@@ -96,6 +97,3 @@ body {
 //             @include components.Typography(700, 22%, 120%)
 //         }
 //     }
-// ::placeholder {
-//     @include components.Typography(400, 16px, 24%)
-// }

@@ -1,6 +1,7 @@
 @use "../default/default";
 
 @mixin Typography($weight, $size, $height) {
+    font-family: 'Josefin Sans', sans-serif !important;
     font-weight: $weight !important;
     font-size: $size !important;
     line-height: $height !important;
@@ -14,14 +15,21 @@
 }
 
 .wrapper {
-    @include Wrapper(center, center, row)
+    @include Wrapper(center, center, row);
 }
 .wrapper-col {
     @include Wrapper(center, center, column)
 }
+.letter-space {
+    letter-spacing: .4rem;
+}
+::placeholder {
+    @include Typography(300, 16px, 24%)
+}
 
+// Button
 .primary-BTN {
-    @include Typography(300, 16px, 110%);
+    @include Typography(300, 16px, 100%);
     all: unset;
     box-sizing: border-box;
     height: 40px;
@@ -49,3 +57,4 @@
         color: default.$colorMain3;
         transition: ease .3s;
     }
+// Button

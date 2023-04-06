@@ -11883,10 +11883,15 @@ textarea.form-control-lg {
   color: #282828 !important;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(1);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11910,10 +11915,22 @@ body {
   flex-direction: column;
 }
 
-.primary-BTN {
+.letter-space {
+  letter-spacing: 0.4rem;
+}
+
+::placeholder {
+  font-family: "Josefin Sans", sans-serif !important;
   font-weight: 300 !important;
   font-size: 16px !important;
-  line-height: 110% !important;
+  line-height: 24% !important;
+}
+
+.primary-BTN {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+  line-height: 100% !important;
   all: unset;
   box-sizing: border-box;
   height: 40px;
@@ -11929,6 +11946,7 @@ body {
 }
 
 .secondary-BTN {
+  font-family: "Josefin Sans", sans-serif !important;
   font-weight: 300 !important;
   font-size: 15px !important;
   line-height: 110% !important;
@@ -11947,7 +11965,7 @@ body {
 }
 
 header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .coupon-container {
@@ -11955,30 +11973,26 @@ header {
   height: 50px;
   margin-bottom: 3.5rem;
 }
-
-.coupon-bar {
+.coupon-container .coupon-bar {
   width: 100%;
   position: absolute;
   background-color: #282828;
 }
-.coupon-bar p {
+.coupon-container .coupon-bar p {
+  font-family: "Josefin Sans", sans-serif !important;
   font-weight: 200 !important;
   font-size: 18px !important;
   line-height: 110% !important;
-  letter-spacing: 0.2em;
 }
-
-.coupon-bar:nth-child(1) {
+.coupon-container .coupon-bar:nth-child(1) {
   animation: fading 7s infinite alternate;
   animation-delay: 5s;
 }
-
-.coupon-bar:nth-child(2) {
+.coupon-container .coupon-bar:nth-child(2) {
   opacity: 0;
   animation: fading 7s infinite alternate-reverse;
   animation-delay: 5s;
 }
-
 @keyframes fading {
   from {
     opacity: 1;
@@ -11996,6 +12010,7 @@ header {
     opacity: 0;
   }
 }
+
 .logo {
   margin-bottom: 2rem;
 }
@@ -12003,11 +12018,15 @@ header {
   text-decoration: none;
 }
 .logo a h1 {
-  font-weight: normal !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 400 !important;
   font-size: 59px !important;
   line-height: 110% !important;
   color: #282828;
-  letter-spacing: 0.2em;
+}
+
+.nav-container {
+  margin-left: 6rem;
 }
 
 .account-container button, .cart-container button {
@@ -12021,7 +12040,7 @@ main {
   position: relative;
 }
 
-.banner-container, .product-container {
+.banner-container {
   margin-bottom: 4rem;
 }
 
@@ -12039,4 +12058,74 @@ main {
 }
 .product-card img {
   width: 200px;
+}
+
+footer a {
+  text-decoration: none;
+}
+footer a h2 {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 28px !important;
+  line-height: 110% !important;
+  color: #282828;
+}
+footer .footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+footer p {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 110% !important;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  max-width: 960px;
+}
+.info-container a {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+  line-height: 110% !important;
+}
+.info-container .social-icon {
+  width: 20px;
+}
+
+.subscribed-message {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 22px !important;
+  line-height: 110% !important;
+}
+
+form input {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 120% !important;
+  padding: 9px 8px;
+  width: 340px;
+}
+form input:hover {
+  border: 2px solid #000;
+  transition: ease 0.2s;
+}
+form ::placeholder {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+  line-height: 24% !important;
+}
+form button {
+  all: unset;
+  width: 154px !important;
 }/*# sourceMappingURL=index.css.map */
