@@ -57,4 +57,20 @@
         color: default.$colorMain3;
         transition: ease .3s;
     }
+
+.secondary-BTN-dark {
+    @include Typography(300, 15px, 110%);
+    all: unset;
+    box-sizing: border-box;
+    padding: 11px 32px;
+    color: default.$colorMain1;
+    background-color: #ffffff00;
+    border: 1px solid default.$colorMain1;
+    text-align: center;
+}
+    .secondary-BTN-dark:hover {
+        color: #fff;
+        background-color: default.$colorMain1;
+        transition: ease .5s;
+    }
 // Button
