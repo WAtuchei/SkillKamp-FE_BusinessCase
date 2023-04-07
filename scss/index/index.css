@@ -12116,4 +12116,27 @@ form .error-shaking {
   100% {
     transform: translateX(0);
   }
+}
+
+.floating-container {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.floating-container .social-floating {
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  pointer-events: all;
+}
+.floating-container .social-floating img {
+  width: 30px;
+  opacity: 0.6;
+}
+.floating-container .social-floating img:hover {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */
