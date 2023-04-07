@@ -12044,13 +12044,28 @@ header {
   line-height: 110% !important;
   color: #282828;
 }
+.logo a h1:hover {
+  color: #d2461c !important;
+  transition: ease 0.3s;
+}
 
 .nav-container {
   margin-left: 6rem;
 }
+.nav-container a.active {
+  color: #d2461c !important;
+}
+.nav-container a:hover {
+  color: #d2461c !important;
+  transition: ease 0.3s;
+}
 
 .account-container button, .cart-container button {
   all: unset;
+}
+.account-container button:hover, .cart-container button:hover {
+  color: #afafaf;
+  transition: ease 0.3s;
 }
 .account-container img, .cart-container img {
   width: 22px;

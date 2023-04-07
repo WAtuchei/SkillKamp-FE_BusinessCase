@@ -9,6 +9,10 @@ footer {
             @include components.Typography(400, 28px, 110%);
             color: default.$colorMain1;
         }
+        h2:hover {
+            color: default.$colorMain2 !important;
+            transition: ease .3s;
+        }
     }
     .footer-line {
         width: 100%;
@@ -27,6 +31,10 @@ footer {
     a{
         @include components.Typography(300, 16px, 110%)
     }
+    a:hover {
+        color: default.$colorMain2 !important;
+        transition: ease .2s;
+    }
 
     .social-icon {
         width: 20px;
@@ -40,12 +48,16 @@ footer {
 form {
     input {
         @include components.Typography(400, 15px, 120%);
-        padding: 9px 8px;
+        all: unset;
         width: 340px; 
+        padding: 9px 8px;
+        border: 1px solid #444444a8;
+        border-radius: 3px;
     }
-    input:hover {
+    #subEmail:hover, :focus {
         border: 2px solid #000;
-        transition: ease .2s;
+        border-radius: 3px;
+        transition: ease .1s;
     }
     ::placeholder {
         @include components.Typography(300, 16px, 24%)
@@ -54,4 +66,17 @@ form {
         all: unset;
         width: 154px !important;
     }
+
+// Form error animated
+    .error-shaking {
+        animation: horizontal-shaking .5s ease;
+    }
+    @keyframes horizontal-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateX(5px) }
+        50% { transform: translateX(-5px) }
+        75% { transform: translateX(5px) }
+        100% { transform: translateX(0) }
+    }
 }
+

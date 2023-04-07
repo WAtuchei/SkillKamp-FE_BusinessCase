@@ -12026,6 +12026,10 @@ footer a h2 {
   line-height: 110% !important;
   color: #282828;
 }
+footer a h2:hover {
+  color: #d2461c !important;
+  transition: ease 0.3s;
+}
 footer .footer-line {
   width: 100%;
   height: 1px;
@@ -12052,6 +12056,10 @@ footer p {
   font-size: 16px !important;
   line-height: 110% !important;
 }
+.info-container a:hover {
+  color: #d2461c !important;
+  transition: ease 0.2s;
+}
 .info-container .social-icon {
   width: 20px;
 }
@@ -12068,12 +12076,16 @@ form input {
   font-weight: 400 !important;
   font-size: 15px !important;
   line-height: 120% !important;
-  padding: 9px 8px;
+  all: unset;
   width: 340px;
+  padding: 9px 8px;
+  border: 1px solid rgba(68, 68, 68, 0.6588235294);
+  border-radius: 3px;
 }
-form input:hover {
+form #subEmail:hover, form :focus {
   border: 2px solid #000;
-  transition: ease 0.2s;
+  border-radius: 3px;
+  transition: ease 0.1s;
 }
 form ::placeholder {
   font-family: "Josefin Sans", sans-serif !important;
@@ -12084,4 +12096,24 @@ form ::placeholder {
 form button {
   all: unset;
   width: 154px !important;
+}
+form .error-shaking {
+  animation: horizontal-shaking 0.5s ease;
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=index.css.map */

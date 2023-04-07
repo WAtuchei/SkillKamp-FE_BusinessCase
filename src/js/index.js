@@ -1,9 +1,6 @@
 "use strict";
-const emailForm = document.getElementById("emailForm"),
-    userEmail = document.getElementById("userEmail"),
-    errorIcon = document.querySelector(".errorIcon"),
-    errorMessage = document.querySelector(".errorMessage"),
-    errorSet = [errorIcon, errorMessage];
+const subForm = document.getElementById("subForm"),
+    subEmail = document.getElementById("subEmail");
 
 // Email Check
 const emailChecked = (input) => {
@@ -13,11 +10,14 @@ const emailChecked = (input) => {
     if (re.test(testEmail)) {
         const subEmail = testEmail.toLowerCase();
 
+        console.log(subEmail);
+
         localStorage.setItem('subEmail', subEmail);
         return true
 
     } else {
         invalidForm();
+        console.log('No');
     }
 }
 // Length Check
@@ -28,7 +28,7 @@ const lengthChecked = (input, min) => {
         invalidForm();
 
     } else if (testLength.length < min) {
-        errorMessage.innerText = "The email was too short";
+        invalidForm();
 
     } else {
         return true
@@ -36,29 +36,35 @@ const lengthChecked = (input, min) => {
 }
 // Error
 const invalidForm = () => {
-    errorSet.map((error) => {
-        error.style.display = "block";
-    })
-    userEmail.classList.add('input-invalid');
-    errorMessage.classList.add('fading-animated')
-    errorMessage.innerText = "Please provide a valid email";
+    subEmail.style.borderColor = "red";
+    subEmail.classList.add('error-shaking');
 
-    // after CSS animated
-    errorMessage.addEventListener('animationend', () => {
-        errorMessage.classList.remove('fading-animated')
+    subEmail.addEventListener('animationend', () => {
+        subEmail.classList.remove('error-shaking');
     })
 }
 // Submit
-emailForm.addEventListener('submit', (e) => {
+subForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const email = emailChecked(userEmail),
-        maillength = lengthChecked(userEmail, 6);
+    const email = emailChecked(subEmail),
+        maillength = lengthChecked(subEmail, 6);
 
     switch (email && maillength) {
         case true:
-            window.location.href = "https://watuchei.github.io/-Custom-FrontEndMentor-JS1-BaseApparel/subscribed.html";
+            // window.location.href = "https://watuchei.github.io/-Custom-FrontEndMentor-JS1-BaseApparel/subscribed.html";
             break;
         default:
             break;
     }
 });
+
+// Local Storage Clear
+const sessionEmail = localStorage.getItem('subEmail');
+
+ window.addEventListener('unload', () => {
+    localStorage.clear();
+})
+
+subEmail.addEventListener('keydown', () => {
+    subEmail.style.borderColor = "#282828"
+})

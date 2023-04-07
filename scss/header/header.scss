@@ -39,25 +39,41 @@ header {
 
 .logo {
     margin-bottom: 2rem;
+
     a {
         text-decoration: none;
 
         h1 {
             @include components.Typography(400, 59px, 110%);
-
             color: default.$colorMain1;
         }
+        h1:hover {
+            color: default.$colorMain2 !important;
+            transition: ease .3s;
+        }
     }
-    
 }
 
 // Navbar
 .nav-container {
     margin-left: 6rem;
+
+    a.active {
+        color: default.$colorMain2 !important;
+    }
+    a:hover {
+        color: default.$colorMain2 !important;
+        transition: ease .3s;
+    }
 }
 .account-container, .cart-container {
     button {
         all: unset;
+
+    }
+    button:hover {
+        color: default.$colorMain3;
+        transition: ease .3s;
     }
     img {
         width: 22px;

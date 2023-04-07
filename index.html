@@ -13,7 +13,7 @@
 
     <title>Home | happy kids</title>
 </head>
-<body>
+<body class="position-relative">
     <header class="container-fluid g-0">
         <!-- Coupon bar -->
         <section class="coupon-container">
@@ -32,7 +32,7 @@
         </div>
 
         <!-- Nav Menu -->
-        <nav class="nav-container">
+        <navbar class="nav-container">
             <nav class="nav ms-0 ms-lg-4 justify-content-center">
                 <a class="nav-link ms-2 ms-md-3 ms-lg-4 active" href="index.html">Home</a>
                 <a class="nav-link ms-2 ms-md-3 ms-lg-4" href="#">Shop Collection</a>
@@ -53,7 +53,7 @@
                     </button>
                 </div>
             </nav> 
-        </nav>
+        </navbar>
     </header>
     
     <main>
@@ -181,8 +181,8 @@
                 <p class="subscribed-message">Join Our Mailing List</p>
             </div>
 
-            <form id="emailForm" class="wrapper w-100 mt-2 position-relative" novalidate>
-                <input id="userEmail" type="email" name="subEmail" placeholder="Enter your email here*" maxlength="35">
+            <form id="subForm" class="wrapper w-100 mt-2 position-relative" novalidate>
+                <input id="subEmail" type="email" name="subEmail" placeholder="Enter your email here*" maxlength="35">
                 <button class="primary-BTN ms-2 px-2" type="submit" value="submit"> 
                     Subscribed Now
                 </button>
