@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="scss/header/header.css">
     <link rel="stylesheet" href="scss/index/index.css">
+    <link rel="stylesheet" href="scss/footer/footer.css">
     <!-- Custom Bootstrap 5 -->
     <link rel="stylesheet" href="scss/custom/custom.css">
 
@@ -56,7 +57,7 @@
         </navbar>
     </header>
     
-    <main>
+    <main class="position-relative">
         <!-- Banner Carousel -->
         <section class="banner-container">
             <div id="bannerCarousel" class="carousel carousel-fade" data-bs-ride="carousel">
@@ -97,15 +98,52 @@
                 <h2>New Arrivals</h2>
             </div>
 
-            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner wrapper" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="product-card py-2">
+            <!-- Not Finish -->
+            <div id="productCarousel" class="carousel slide wrapper" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="wrapper row active">
+                        <div class="product-card col-3 py-2 text-center">
                             <div class="wrapper">
                                 <img src="Images/Product/Product1.png" class="d-block" alt="T-shirt">
                             </div>
                             <div class="wrapper-col">
-                                <p class="m-1">I'm product</p>
+                                <p class="my-1">I'm product</p>
+                                <p>19.99₺</p>
+                            </div>
+                            <div class="wrapper px-4">
+                                <button class="secondary-BTN w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card col-3 py-2">
+                            <div class="wrapper">
+                                <img src="Images/Product/Product2.png" class="d-block" alt="T-shirt">
+                            </div>
+                            <div class="wrapper-col">
+                                <p class="my-1">I'm product</p>
+                                <p>19.99₺</p>
+                            </div>
+                            <div class="wrapper px-4">
+                                <button class="secondary-BTN w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card col-3 py-2">
+                            <div class="wrapper">
+                                <img src="Images/Product/Product3.png" class="d-block" alt="T-shirt">
+                            </div>
+                            <div class="wrapper-col">
+                                <p class="my-1">I'm product</p>
+                                <p>19.99₺</p>
+                            </div>
+                            <div class="wrapper px-4">
+                                <button class="secondary-BTN w-100">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-card col-3 py-2">
+                            <div class="wrapper">
+                                <img src="Images/Product/Product4.png" class="d-block" alt="T-shirt">
+                            </div>
+                            <div class="wrapper-col">
+                                <p class="my-1">I'm product</p>
                                 <p>19.99₺</p>
                             </div>
                             <div class="wrapper px-4">
@@ -114,6 +152,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Not Finish -->
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -183,7 +222,7 @@
 
             <form id="subForm" class="wrapper w-100 mt-2 position-relative" novalidate>
                 <input id="subEmail" type="email" name="subEmail" placeholder="Enter your email here*" maxlength="35">
-                <button class="primary-BTN ms-2 px-2" type="submit" value="submit"> 
+                <button class="primary-BTN subBTN ms-2 px-2" type="submit" value="submit"> 
                     Subscribed Now
                 </button>
              </form>

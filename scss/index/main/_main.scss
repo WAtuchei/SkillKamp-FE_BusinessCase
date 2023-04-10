@@ -1,8 +1,5 @@
 @use "../../default/default";
 
-main {
-    position: relative;
-}
 // banner
 .banner-container {
     margin-bottom: 4rem;
@@ -20,14 +17,13 @@ main {
         transform: translate(-50%, -50%);
     }
 }
-
-
 // banner
 
 // product
 .product-container  {
     #productCarousel {
         .carousel-inner {
+            min-width: 780px;
             max-width: 1200px;
         }
     }

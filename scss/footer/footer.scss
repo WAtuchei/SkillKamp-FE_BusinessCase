@@ -1,5 +1,5 @@
-@use "../../default/default";
-@use "../../Component/components";
+@use "../default/default";
+@use "../Component/components";
 
 footer {
     a{
@@ -79,4 +79,3 @@ form {
         100% { transform: translateX(0) }
     }
 }
-

@@ -11984,36 +11984,6 @@ body {
   transition: ease 0.5s;
 }
 
-.banner-container {
-  margin-bottom: 4rem;
-}
-.banner-container .carousel-item img {
-  max-height: 650px;
-  object-fit: cover;
-}
-.banner-container .banner-showcase {
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  transform: translate(-50%, -50%);
-}
-
-.product-container #productCarousel .carousel-inner {
-  min-width: 780px;
-  max-width: 1200px;
-}
-.product-container h2 {
-  margin-bottom: 2.5rem;
-}
-
-.product-card {
-  max-width: 360px;
-}
-.product-card img {
-  width: 100%;
-}
-
-<<<<<<< Updated upstream
 footer a {
   text-decoration: none;
 }
@@ -12114,27 +12084,4 @@ form .error-shaking {
   100% {
     transform: translateX(0);
   }
-=======
-.floating-container {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  pointer-events: none;
-}
-.floating-container .social-floating {
-  position: fixed;
-  top: 40%;
-  right: 5%;
-  pointer-events: all;
-}
-.floating-container .social-floating img {
-  width: 30px;
-  opacity: 0.6;
-}
-.floating-container .social-floating img:hover {
-  opacity: 1;
->>>>>>> Stashed changes
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=footer.css.map */

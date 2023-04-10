@@ -1,0 +1,23 @@
+.floating-container {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    .social-floating {
+        position: fixed;
+        top: 40%;
+        right: 5%;
+        pointer-events: all;
+
+        img {
+            width: 30px;
+            opacity: .6;}
+        img:hover {
+            opacity: 1;
+        }
+    }
+}
