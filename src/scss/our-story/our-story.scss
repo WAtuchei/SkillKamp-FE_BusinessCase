@@ -13,10 +13,19 @@ main {
         text-align: center;
     }
 
+    h6 {
+        @include components.Typography(300, 15px, 110%);
+        text-transform: uppercase;
+    }
+
     p {
         @include components.Typography(300, 16px, 110%);
         margin: 1rem 0;
         max-width: 800px;
         text-align: center;
     }
+}
+
+a.active {
+    color: default.$colorMain2 !important;
 }

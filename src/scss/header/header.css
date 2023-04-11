@@ -11985,7 +11985,8 @@ body {
 }
 
 header {
-  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e9ecef;
 }
 
 .coupon-container {
@@ -12069,4 +12070,8 @@ header {
 }
 .account-container img, .cart-container img {
   width: 22px;
+}
+
+a.active {
+  color: #d2461c !important;
 }/*# sourceMappingURL=header.css.map */

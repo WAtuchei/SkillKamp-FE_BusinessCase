@@ -2,7 +2,8 @@
 @use "../default/default";
 
 header {
-    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid default.$neutral-200;
 }
 .coupon-container {
     display: flex;
@@ -78,4 +79,8 @@ header {
     img {
         width: 22px;
     }
+}
+
+a.active {
+    color: default.$colorMain2 !important;
 }

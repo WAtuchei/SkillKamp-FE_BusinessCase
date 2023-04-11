@@ -11996,6 +11996,13 @@ main h2 {
   line-height: 110% !important;
   text-align: center;
 }
+main h6 {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 110% !important;
+  text-transform: uppercase;
+}
 main p {
   font-family: "Josefin Sans", sans-serif !important;
   font-weight: 300 !important;
@@ -12004,4 +12011,8 @@ main p {
   margin: 1rem 0;
   max-width: 800px;
   text-align: center;
+}
+
+a.active {
+  color: #d2461c !important;
 }/*# sourceMappingURL=our-story.css.map */
