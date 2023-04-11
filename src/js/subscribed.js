@@ -13,11 +13,11 @@ const emailChecked = (input) => {
         console.log(subEmail);
 
         localStorage.setItem('subEmail', subEmail);
-        return true
+        return true;
 
     } else {
         invalidForm();
-        console.log('No');
+        console.log('Not Pass');
     }
 }
 // Length Check
@@ -31,7 +31,7 @@ const lengthChecked = (input, min) => {
         invalidForm();
 
     } else {
-        return true
+        return true;
     }
 }
 // Error
@@ -41,7 +41,7 @@ const invalidForm = () => {
 
     subEmail.addEventListener('animationend', () => {
         $('#subEmail').removeClass('error-shaking');
-    })
+    });
 }
 // Submit
 subForm.addEventListener('submit', (e) => {
@@ -59,7 +59,7 @@ subForm.addEventListener('submit', (e) => {
             };
             $(document).on('click', '.subBTN', disableButton);
 
-            console.log('pass');
+            console.log('Pass');
             break;
         default:
             break;
