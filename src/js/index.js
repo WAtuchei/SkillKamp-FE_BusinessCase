@@ -37,10 +37,10 @@ const lengthChecked = (input, min) => {
 // Error
 const invalidForm = () => {
     subEmail.style.borderColor = "red";
-    subEmail.classList.add('error-shaking');
+    $('#subEmail').addClass('error-shaking');
 
     subEmail.addEventListener('animationend', () => {
-        subEmail.classList.remove('error-shaking');
+        $('#subEmail').removeClass('error-shaking');
     })
 }
 // Submit
@@ -51,7 +51,15 @@ subForm.addEventListener('submit', (e) => {
 
     switch (email && maillength) {
         case true:
-            // window.location.href = "https://watuchei.github.io/-Custom-FrontEndMentor-JS1-BaseApparel/subscribed.html";
+            $('#subEmail').remove();
+            $('.subBTN').text('Thank you');
+
+            var disableButton = (e) => {
+                $('.subBTN').prop('disabled', true);
+            };
+            $(document).on('click', '.subBTN', disableButton);
+
+            console.log('pass');
             break;
         default:
             break;
@@ -60,7 +68,6 @@ subForm.addEventListener('submit', (e) => {
 
 // Local Storage Clear
 const sessionEmail = localStorage.getItem('subEmail');
-
  window.addEventListener('unload', () => {
     localStorage.clear();
 })
