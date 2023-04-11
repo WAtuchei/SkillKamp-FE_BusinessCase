@@ -6,15 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="WAtuchei">
 
-    <link rel="stylesheet" href="scss/header/header.css">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="scss/footer/footer.css">
+    <link rel="stylesheet" href="src/scss/header/header.css">
+    <link rel="stylesheet" href="src/scss/our-story/our-story.css">
+    <link rel="stylesheet" href="src/scss/footer/footer.css">
     <!-- Custom Bootstrap 5 -->
-    <link rel="stylesheet" href="scss/custom/custom.css">
+    <link rel="stylesheet" href="src/scss/custom/custom.css">
 
     <title>Our Story | happy kids</title>
 </head>
 <body>
+    <header class="container-fluid g-0">
+        <!-- Coupon bar -->
+        <section class="coupon-container">
+            <div class="coupon-bar wrapper letter-space py-3 text-light text-center">
+                <p class="m-0">Get 10% Off - Use Coupon Code HAPPY123</p>
+            </div>
+            <div class="coupon-bar wrapper letter-space py-3 text-light">
+                <p class="m-0">Free Shipping Over $50</p>
+            </div>
+        </section>
+        <!-- brand logo -->
+        <div class="logo wrapper letter-space">
+            <a href="index.html">
+                <h1 class="letter-space">happy kids</h1>
+            </a>
+        </div>
+
+        <!-- Nav Menu -->
+        <navbar class="nav-container">
+            <nav class="nav ms-0 ms-lg-4 justify-content-center">
+                <a class="nav-link ms-2 ms-md-3 ms-lg-4" href="index.html">Home</a>
+                <a class="nav-link ms-2 ms-md-3 ms-lg-4" href="#">Shop Collection</a>
+                <a class="nav-link ms-2 ms-md-3 ms-lg-4 active" href="our-story.html">Our Story</a>
+                <a class="nav-link ms-2 ms-md-3 ms-lg-4" href="#">Contact</a>   
+            <!-- Account -->
+                <div class="account-container wrapper ms-2 ms-md-3 ms-lg-5">
+                    <button>
+                        <img src="Images/Icon/user-svgrepo-com.svg" alt="user-icon">
+                        <span>Log In</span>
+                    </button>
+                </div>
+            <!-- Cart -->
+                <div class="cart-container wrapper ms-3">
+                    <button>
+                        <img src="Images/Icon/cart-svgrepo-com.svg" alt="cart">
+                        <span>0</span>
+                    </button>
+                </div>
+            </nav> 
+        </navbar>
+    </header>
     
+    <main class="wrapper-col">
+        <div class="wrapper">
+            <img src="Images/Banner4-Ourstory.png" alt="Room">
+        </div>
+
+        <div class="wrapper-col mt-4 mb-3">
+            <div class="wrapper mt-3 py-3">
+                <h2>Our Story</h2>
+            </div>
+
+            <div class="wrapper-col mt-3 px-5">
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="wrapper-col">
+        <div class="footer-line my-2"></div>
+        <!-- footer logo -->
+        <div class="wrapper mt-5">
+            <a href="index.html">
+                <h2>happy kids</h2>
+            </a>
+        </div>
+    
+        <!-- contact & info -->
+        <section class="info-container w-100 mt-1 mt-lg-4 py-2 py-md-3 row">
+            <!-- Pagination -->
+            <div class="col-4">
+                <div class="wrapper-col">
+                    <a class="nav-link mt-2" href="index.html">Home</a>
+                    <a class="nav-link mt-2" href="#">Shop Collection</a>
+                    <a class="nav-link mt-2" href="our-story.html">Our Story</a>
+                    <a class="nav-link mt-2" href="#">Contact</a>
+                </div>
+            </div>
+            <!-- Social -->
+            <div class="col-4">
+                <div class="wrapper">
+                    <a class="nav-link" href="https://www.facebook.com/wix" target="_blank">
+                        <img class="social-icon" src="Images/Icon/Social icons/facebook-svgrepo-com.svg" alt="facebook">
+                    </a>
+                    <a class="nav-link ms-4 ms-lg-5" href="https://www.pinterest.com/wixcom/" target="_blank">
+                        <img class="social-icon" src="Images/Icon/Social icons/pinterest-svgrepo-com.svg" alt="pinterest">
+                    </a>
+                    <a class="nav-link ms-4 ms-lg-5" href="https://www.instagram.com/wix/" target="_blank">
+                        <img class="social-icon" src="Images/Icon/Social icons/instagram-svgrepo-com.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+            <!-- FAQ -->
+            <div class="col-4">
+                <div class="wrapper-col">
+                    <a class="nav-link mt-2" href="#">Shipping & Returns</a>
+                    <a class="nav-link mt-2" href="#">Store Policy</a>
+                    <a class="nav-link mt-2" href="#">Payment Methods</a>
+                    <a class="nav-link mt-2" href="#">FAQ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribed -->
+        <section class="wrapper-col w-100 mt-5 mb-5">
+            <div class="wrapper">
+                <p class="subscribed-message">Join Our Mailing List</p>
+            </div>
+
+            <form id="subForm" class="wrapper w-100 mt-2 position-relative" novalidate>
+                <input id="subEmail" type="email" name="subEmail" placeholder="Enter your email here*" maxlength="35">
+                <button class="primary-BTN subBTN ms-2 px-2" type="submit" value="submit"> 
+                    Subscribed Now
+                </button>
+             </form>
+        </section>
+
+        <p class="wrapper copyright m-0 mt-3 p-0">© 2035 by happy kids. Powered and secured by 
+            <a href="https://th.wix.com/?utm_campaign=vir_created_with" target="_blank" class="text-dark ms-1">Wix</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap 5 -->
+    <script src="module_Packages/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="module_Packages/jquery/dist/jquery.min.js"></script>
+    <script src="src/js/subscribed.js"></script>
 </body>
 </html>
