@@ -13,9 +13,8 @@ const emailContact = (input) => {
 
     if (re.test(testEmail)) {
         const contactEmail = testEmail.toLowerCase();
-
         localStorage.setItem('contactEmail', contactEmail);
-        console.log(contactEmail);
+
         return true;
 
     } else {
@@ -46,14 +45,13 @@ const invalidEmail = () => {
         $('#contactEmail').removeClass('error-shaking');
     });
 }
-
 // store data to localStorage
 const storeData = () => {
-    const objEmail = localStorage.getItem('contactEmail');
     let fName = firstName.value,
         lname = lastName.value,
         heading = subject.value,
         messages = message.value;
+    const objEmail = localStorage.getItem('contactEmail');
 
     const objUserData = {
         fname: fName,
@@ -89,5 +87,4 @@ contactForm.addEventListener('submit', (e) => {
 // Local Storage Clear
  window.addEventListener('unload', () => {
     localStorage.clear();
-})
-
+});

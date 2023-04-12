@@ -9,15 +9,14 @@ const emailChecked = (input) => {
 
     if (re.test(testEmail)) {
         const subEmail = testEmail.toLowerCase();
-
-        console.log(subEmail);
-
         localStorage.setItem('subEmail', subEmail);
+
+        console.log(`Subed email is ${subEmail}`);
         return true;
 
     } else {
         invalidForm();
-        console.log('Subed Not Pass');
+        console.log('Subed email Not Pass');
     }
 }
 // Length Check
@@ -58,8 +57,7 @@ subForm.addEventListener('submit', (e) => {
                 $('.subBTN').prop('disabled', true);
             };
             $(document).on('click', '.subBTN', disableButton);
-
-            console.log('Pass');
+            
             break;
         default:
             break;
@@ -67,7 +65,7 @@ subForm.addEventListener('submit', (e) => {
 });
 
 // Local Storage Clear
- window.addEventListener('unload', () => {
+window.addEventListener('unload', () => {
     localStorage.clear();
 })
 

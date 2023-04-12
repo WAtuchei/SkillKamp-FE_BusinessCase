@@ -14,16 +14,16 @@
         padding: 9px 8px;
         border-bottom: 1px solid #444444a8;
     }
-    input:hover, :focus {
-        border: 0;
-        border-bottom: 2px solid #000 !important;
-        transition: ease .1s;
-    }
+        input:hover, :focus {
+            border: 0;
+            border-bottom: 2px solid #000 !important;
+            transition: ease .1s;
+        }
     button {
         border: 0;
         font-size: 16px !important;
     }
-    button:active, :focus {
-        border: 0;
-    }
+        button:active, :focus {
+            border: 0;
+        }
 }
