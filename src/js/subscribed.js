@@ -17,7 +17,7 @@ const emailChecked = (input) => {
 
     } else {
         invalidForm();
-        console.log('Not Pass');
+        console.log('Subed Not Pass');
     }
 }
 // Length Check
@@ -67,7 +67,6 @@ subForm.addEventListener('submit', (e) => {
 });
 
 // Local Storage Clear
-const sessionEmail = localStorage.getItem('subEmail');
  window.addEventListener('unload', () => {
     localStorage.clear();
 })

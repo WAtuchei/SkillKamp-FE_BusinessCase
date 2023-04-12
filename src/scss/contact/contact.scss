@@ -1,0 +1,29 @@
+@use "../Component/components";
+@use "../default/default";
+@use "../our-story/our-story.scss";
+
+.contact-form {
+    label {
+        @include components.Typography(300, 16px, 120%);
+        display: block;
+    }
+    input, textarea {
+        @include components.Typography(400, 15px, 120%);
+        all: unset;
+        width: 340px; 
+        padding: 9px 8px;
+        border-bottom: 1px solid #444444a8;
+    }
+    input:hover, :focus {
+        border: 0;
+        border-bottom: 2px solid #000 !important;
+        transition: ease .1s;
+    }
+    button {
+        border: 0;
+        font-size: 16px !important;
+    }
+    button:active, :focus {
+        border: 0;
+    }
+}
